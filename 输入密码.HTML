@@ -1,0 +1,66 @@
+<html>
+<head>
+<body ondragstart="return false" oncontextmenu="return false" onselectstart="return false">
+
+
+<title>轩轩电影-输入会员码</title>
+</head>
+<body>
+<center>
+
+<hr>
+
+</center>
+
+	
+
+
+<font size="6">输入会员码</font><br/>
+
+<font size="1">如果没有会员码可购买</font><br/><a href="https://cyx200902.github.io/kthy/">会员购买</a>
+
+
+<script>
+function check(){
+
+var pass=document.getElementById("pass").value;
+ 
+if(pass=="2009cyx02"||pass=="1234567890"||pass=="1234567890"||pass=="1234567890")
+{
+alert("登入成功");
+window.document.f.action="电影主页.html";
+window.document.f.submit();
+}else{
+alert("用户名密码错误或人工审核没通过");
+}
+}
+ 
+ 
+ 
+</script>
+<form name="f" action="">
+密码:<INPUT TYPE="password" NAME="" id="pass"><br>
+<INPUT TYPE="button" value="登入" onclick="check()"><INPUT TYPE="reset" value="重置">
+</form>
+
+
+
+
+
+
+
+</table>
+</form>
+
+ 
+ 
+
+ 
+
+
+
+</body>
+
+
+
+</html>
