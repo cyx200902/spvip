@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>轩轩电影-接口2</title>
+  
+</head>
+ 
+<body>
+<font size="6">轩轩电影-接口2</font><br/>
+<a href="djzy.html">返回主页</a>
+<font size="3">使用教程：打开爱奇艺，优酷等网站，打开你想要的电影，复制网址，粘贴到下面框里点击播放即可</font><br/>
+<font size="3">提示：由于使用人数较多如果打不开可以换个接口</font><br/>
+    <div class="panel-body" style="padding: 0px 15px;">
+        电影网址：<input id="obj1" type=text style="width:300px;" value="" />
+        <button id="btn2" onclick="f1()">点击检索</button>
+    </div>
+    <script type="text/javascript">
+        function f1() {
+            var v = document.getElementById("obj1");
+            location.href = "https://www.myxin.top/jx/api/?url=" + v.value;
+        }
+     
+
+
+</script>
+</body>
+
+     
+    
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
