@@ -3,21 +3,21 @@
 	<head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
 		
-		<title>µ¹¼ÆÊ±ÎåÃëºóÌøÒ³Ãæ</title>
+		<title>å€’è®¡æ—¶äº”ç§’åè·³é¡µé¢</title>
 		<script>
 			function countDown(){
-				//»ñÈ¡³õÊ¼Ê±¼ä
+				//è·å–åˆå§‹æ—¶é—´
 				var time = document.getElementById("Time");
 				
-				//»ñÈ¡µ½idÎªtime±êÇ©ÖĞµÄÊı×ÖÊ±¼ä
+				//è·å–åˆ°idä¸ºtimeæ ‡ç­¾ä¸­çš„æ•°å­—æ—¶é—´
 				if(time.innerHTML == 0){
-					//µÈÓÚ0Ê±Çå³ı¼ÆÊ±£¬²¢Ìø×ª¸ÃÖ¸¶¨Ò³Ãæ
+					//ç­‰äº0æ—¶æ¸…é™¤è®¡æ—¶ï¼Œå¹¶è·³è½¬è¯¥æŒ‡å®šé¡µé¢
 					window.location.href="https://blog.csdn.net/qq_43021813";
 				}else{
 					time.innerHTML = time.innerHTML-1;
 				}
 			}
-			//1000ºÁÃëµ÷ÓÃÒ»´Î
+			//1000æ¯«ç§’è°ƒç”¨ä¸€æ¬¡
 			window.setInterval("countDown()",1000);
 		</script>
 		<style>
