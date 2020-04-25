@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+		
+		<title>倒计时五秒后跳页面</title>
+		<script>
+			function countDown(){
+				//获取初始时间
+				var time = document.getElementById("Time");
+				
+				//获取到id为time标签中的数字时间
+				if(time.innerHTML == 0){
+					//等于0时清除计时，并跳转该指定页面
+					window.location.href="https://blog.csdn.net/qq_43021813";
+				}else{
+					time.innerHTML = time.innerHTML-1;
+				}
+			}
+			//1000毫秒调用一次
+			window.setInterval("countDown()",1000);
+		</script>
+		<style>
+			#Time,#p{
+				font-size: 50px;
+				text-align: center;
+			}
+			#Font,#p{
+				font-size: 50px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+
+
+		<font color="yellow"><p id="Time" >5</p></font>
+		
+                <img src="https://i.ibb.co/vQj6g6R/1.jpg" alt="1" border="0" /></a>
+	</body>
+</html>
