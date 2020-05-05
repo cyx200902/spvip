@@ -297,7 +297,24 @@ function addhtml52() {
                 + '秒';
         document.getElementById("htmer_time").innerHTML = currentTimeHtml;
     }
-    setInterval(setTime, 1000); 
+    setInterval(setTime, 1000);
+	
+					    
+					   
+	
+					    
+</script>
+<script type="text/javascript">
+    var system ={};  
+       var p = navigator.platform;       
+       system.win = p.indexOf("Win") == 0;  
+       system.mac = p.indexOf("Mac") == 0;  
+       system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
+       if(system.win||system.mac||system.xll){//如果是电脑跳转到
+               window.location.href="www.baidu.com";  
+       }else{  //如果是手机,跳转到
+              window.location.href="https://www.iqiyi.com/v_19rrk0zjvw.html?vfm=f_245_360d&fv=p_09_01";  
+       }
 </script>
 
          <p><font color="#FFFFFF"></font><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " "" ");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259824618'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "' type='text/javascript'%3E%3C/script%3E"));</script> </p>  
