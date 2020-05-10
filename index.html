@@ -77,11 +77,21 @@ window.document.f.submit();
 	
 
 
-alert("激活码错误或已被封号，封号请联系客服");
-
-	
+alert("登入成功");
+window.document.f.action="电影主页.html";
+window.document.f.submit();
+}else{
+alert("用户名密码错误或人工审核没通过");
 }
- </script>
+}
+ 
+ 
+
+
+ 
+ 
+ 
+</script>
 <form name="f" action="">
 激活码:<INPUT TYPE="password" NAME="" id="pass"><br>
 <INPUT TYPE="button" value="登入" onclick="check()"><INPUT TYPE="reset" value="重置">
