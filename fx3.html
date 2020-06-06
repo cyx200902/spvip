@@ -11,7 +11,7 @@
         nonceStr: 'pILCdGaPoyXDFYyx',
         signature: '3b31d1d54efd5711c03be7b7eeea604edf018de5',
         jsApiList: [
-        // ËùÓĞÒªµ÷ÓÃµÄ API ¶¼Òª¼Óµ½Õâ¸öÁĞ±í>ÖĞ
+        // æ‰€æœ‰è¦è°ƒç”¨çš„ API éƒ½è¦åŠ åˆ°è¿™ä¸ªåˆ—è¡¨>ä¸­
             'checkJsApi',
             'openLocation',
             'getLocation', 
@@ -29,14 +29,14 @@
                 'onMenuShareAppMessage'
             ],
          }); 
-         //·ÖÏíÅóÓÑÈ¦
+         //åˆ†äº«æœ‹å‹åœˆ
          wx.onMenuShareTimeline({
-            title: 'ÎÒÊÇÖĞÉ½Â·Ğ¡Ñ§´óÓíÉ½Ğ£Çø¡¶ÊÀ¼äÃÀºÃÓëÄã»·»·Ïà¿Û¡·,ÕıÔÚ²Î¼ÓÒ½Â·Í¯ĞĞ¡¶ÌìÊ¹³ª¸øÌìÊ¹Ìı¡·Î÷½òÒôÀÖÌüÔÆÉÏÒôÀÖ»á',
+            title: 'æˆ‘æ˜¯ä¸­å±±è·¯å°å­¦å¤§ç¦¹å±±æ ¡åŒºã€Šä¸–é—´ç¾å¥½ä¸ä½ ç¯ç¯ç›¸æ‰£ã€‹,æ­£åœ¨å‚åŠ åŒ»è·¯ç«¥è¡Œã€Šå¤©ä½¿å”±ç»™å¤©ä½¿å¬ã€‹è¥¿æ´¥éŸ³ä¹å…äº‘ä¸ŠéŸ³ä¹ä¼š',
             link: "http://1401054036.ax.nofollow.51wtp.com/index.php/toupiao/h5/detail?id=2977808&vid=y1omr7751vpw6rn",
             imgUrl: 'http://cdn.omlzz.com/1401054036/cc19691590904065.jpg?x-oss-process=image/resize,m_lfit,h_100,w_100',
             trigger: function (res) {
-                // ²»Òª³¢ÊÔÔÚtriggerÖĞÊ¹ÓÃajaxÒì²½ÇëÇóĞŞ¸Ä±¾´Î·ÖÏíµÄÄÚÈİ£¬ÒòÎª¿Í»§¶Ë·ÖÏí²Ù×÷ÊÇÒ»¸öÍ¬²½²Ù×÷£¬ÕâÊ±ºòÊ¹ÓÃajaxµÄ»Ø°ü»á»¹Ã»ÓĞ·µ»Ø
-                //alert('ÓÃ»§µã»÷·ÖÏíµ½ÅóÓÑÈ¦1');
+                // ä¸è¦å°è¯•åœ¨triggerä¸­ä½¿ç”¨ajaxå¼‚æ­¥è¯·æ±‚ä¿®æ”¹æœ¬æ¬¡åˆ†äº«çš„å†…å®¹ï¼Œå› ä¸ºå®¢æˆ·ç«¯åˆ†äº«æ“ä½œæ˜¯ä¸€ä¸ªåŒæ­¥æ“ä½œï¼Œè¿™æ—¶å€™ä½¿ç”¨ajaxçš„å›åŒ…ä¼šè¿˜æ²¡æœ‰è¿”å›
+                //alert('ç”¨æˆ·ç‚¹å‡»åˆ†äº«åˆ°æœ‹å‹åœˆ1');
                 //alert('click');
            }, 
            success: function (res) { 
@@ -44,27 +44,27 @@
                 $.post(url, {type:1})
             },
             cancel: function (res) {
-                //alert('ÒÑÈ¡Ïû');
+                //alert('å·²å–æ¶ˆ');
             },
             fail: function (res) {
 
             }
        });
-       //·ÖÏí¸øÅóÓÑ
+       //åˆ†äº«ç»™æœ‹å‹
         wx.onMenuShareAppMessage({
-            title: 'ÎÒÊÇÖĞÉ½Â·Ğ¡Ñ§´óÓíÉ½Ğ£Çø¡¶ÊÀ¼äÃÀºÃÓëÄã»·»·Ïà¿Û¡·,ÕıÔÚ²Î¼ÓÒ½Â·Í¯ĞĞ¡¶ÌìÊ¹³ª¸øÌìÊ¹Ìı¡·Î÷½òÒôÀÖÌüÔÆÉÏÒôÀÖ»á', // ·ÖÏí±êÌâ
-            desc: '»î¶¯ÕâÃ´¾«²Ê,Äã¶¼²»¿´ÎÒÒ»ÑÛÂğ~', // ·ÖÏíÃèÊö
-            link: 'http://1401054036.ax.nofollow.51wtp.com/index.php/toupiao/h5/detail?id=2977808&vid=y1omr7751vpw6rn', // ·ÖÏíÁ´½Ó
-            imgUrl: 'http://cdn.omlzz.com/1401054036/cc19691590904065.jpg?x-oss-process=image/resize,m_lfit,h_100,w_100', // ·ÖÏíÍ¼±ê
-            type: 'link', // ·ÖÏíÀàĞÍ,music¡¢video»òlink£¬²»ÌîÄ¬ÈÏÎªlink
-            dataUrl: '', // Èç¹ûtypeÊÇmusic»òvideo£¬ÔòÒªÌá¹©Êı¾İÁ´½Ó£¬Ä¬ÈÏÎª¿Õ
+            title: 'æˆ‘æ˜¯ä¸­å±±è·¯å°å­¦å¤§ç¦¹å±±æ ¡åŒºã€Šä¸–é—´ç¾å¥½ä¸ä½ ç¯ç¯ç›¸æ‰£ã€‹,æ­£åœ¨å‚åŠ åŒ»è·¯ç«¥è¡Œã€Šå¤©ä½¿å”±ç»™å¤©ä½¿å¬ã€‹è¥¿æ´¥éŸ³ä¹å…äº‘ä¸ŠéŸ³ä¹ä¼š', // åˆ†äº«æ ‡é¢˜
+            desc: 'æ´»åŠ¨è¿™ä¹ˆç²¾å½©,ä½ éƒ½ä¸çœ‹æˆ‘ä¸€çœ¼å—~', // åˆ†äº«æè¿°
+            link: 'http://1401054036.ax.nofollow.51wtp.com/index.php/toupiao/h5/detail?id=2977808&vid=y1omr7751vpw6rn', // åˆ†äº«é“¾æ¥
+            imgUrl: 'http://cdn.omlzz.com/1401054036/cc19691590904065.jpg?x-oss-process=image/resize,m_lfit,h_100,w_100', // åˆ†äº«å›¾æ ‡
+            type: 'link', // åˆ†äº«ç±»å‹,musicã€videoæˆ–linkï¼Œä¸å¡«é»˜è®¤ä¸ºlink
+            dataUrl: '', // å¦‚æœtypeæ˜¯musicæˆ–videoï¼Œåˆ™è¦æä¾›æ•°æ®é“¾æ¥ï¼Œé»˜è®¤ä¸ºç©º
             success: function () {
-                // ÓÃ»§È·ÈÏ·ÖÏíºóÖ´ĞĞµÄ»Øµ÷º¯Êı
+                // ç”¨æˆ·ç¡®è®¤åˆ†äº«åæ‰§è¡Œçš„å›è°ƒå‡½æ•°
                 var url = U('toupiao/h5/share');
                 $.post(url, {type:2})
              },
              cancel: function () {
-             // ÓÃ»§È¡Ïû·ÖÏíºóÖ´ĞĞµÄ»Øµ÷º¯Êı
+             // ç”¨æˆ·å–æ¶ˆåˆ†äº«åæ‰§è¡Œçš„å›è°ƒå‡½æ•°
              }
          });
         wx.hideMenuItems({
