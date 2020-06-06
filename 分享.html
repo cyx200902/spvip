@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+
+ <html lang="zh">
+
+<head>
+
+  <link href="C:\Users\Administrator\Desktop\轩轩网\电影\正式版\logo.png" rel="icon" type="image/x-ico">
+
+
+    <title>轩轩电影-分享</title>
+  
+</head>
+ 
+<body>
+<font size="6">轩轩电影-分享</font><br/>
+<a href="电影主页.html">返回主页</a>
+<font size="3">点击复制，到微信&QQ粘贴分享</font><br/>
+活动1：
+<input type="text" id="copyVal" readonly value="轩轩电影官方QQ群：1103710630，进群可购买激活码" />
+<button class="copyBtn" >点击复制</button>
+
+
+<script> 
+var copyBtn = document.getElementsByClassName('copyBtn')[0];
+
+	copyBtn.onclick = function(){
+	    var copyVal = document.getElementById("copyVal");
+	        copyVal.select();
+	    
+	    try{
+	        if(document.execCommand('copy', false, null)){
+	            //success info
+                 alert("复制成功，打开微信&QQ粘贴分享");
+	            console.log("doSomething...");
+	        } else{
+	            //fail info
+                 alert("复制失败，请刷新重试");
+	            console.log("doSomething...");
+	        }
+	    } catch(err){
+	        //fail info
+                 alert("复制失败，请刷新重试");
+	        console.log("doSomething...");
+	    }
+	}
+</script>
+
+
+
+</br>
+</br>
+</br>
+活动2：
+<input type="text" id="copyVal2" readonly value="复制这段话>本周小福利<打开【轩轩电影】——活动——粘贴" />
+<button class="copyBtn2" >点击复制</button>（活动：8折，不重复折扣   时间2020/6/6/21:00-2020/6/14/9:20）
+
+
+<script> 
+var copyBtn2 = document.getElementsByClassName('copyBtn2')[0];
+
+	copyBtn2.onclick = function(){
+	    var copyVal2 = document.getElementById("copyVal2");
+	        copyVal2.select();
+	    
+	    try{
+	        if(document.execCommand('copy', false, null)){
+	            //success info
+                 alert("复制成功，打开微信&QQ粘贴分享");
+	            console.log("doSomething...");
+	        } else{
+	            //fail info
+                 alert("复制失败，请刷新重试");
+	            console.log("doSomething...");
+	        }
+	    } catch(err){
+	        //fail info
+                 alert("复制失败，请刷新重试");
+	        console.log("doSomething...");
+	    }
+	}
+</script>
+
+
+
+
+
+
+</body>
+
+  
+    
+
+</html>
+

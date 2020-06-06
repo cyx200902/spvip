@@ -1,0 +1,89 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<body ondragstart="return false" oncontextmenu="return false" onselectstart="return false">
+
+
+<title>轩轩电影-输入活动码</title>
+	
+	
+	
+
+<script type="text/javascript">
+
+
+</script>
+	
+	
+</head>
+<body>
+<center>
+
+<hr>
+
+</center>
+
+	
+
+
+<font size="6">输入活动码</font><br/>
+
+<font size="1">如活动码：复制这段话 >1dzit4d< 打开【轩轩电影】——活动——粘贴</font><br/>
+
+	
+	
+<script>
+function check(){
+
+var pass=document.getElementById("pass").value;
+if(pass=="复制这段话>本周小福利<打开【轩轩电影】——活动——粘贴")
+{
+alert("活动码正确");
+window.document.f.action="hd1.html";
+window.document.f.submit();
+}else{
+if(pass=="")
+{
+alert("请输入活动码");
+
+}else{
+alert("活动码无效");
+}
+}
+}
+
+ 
+ 
+
+
+ 
+ 
+ 
+</script>
+<form name="f" action="">
+激活码:<INPUT TYPE="text" NAME="" id="pass"><br>
+<INPUT TYPE="button" value="登入" onclick="check()"><INPUT TYPE="reset" value="重置">
+</form>
+
+
+
+
+
+
+</table>
+</form>
+
+ 
+ 
+
+ 
+
+
+ 
+
+
+</body>
+
+
+
+</html>
